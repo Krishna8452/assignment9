@@ -11,7 +11,7 @@
         if (!userToken) {
           return res.status(401).send("Access denied. No token provided");
         }
-        const token = userToken.split(" ")[0]
+        const token = userToken.split(" ")[1]
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
         const { username } = decoded;
 
@@ -29,6 +29,6 @@
         req.user = userFromDatabase;
         next();
       } catch (error) {
-        return res.status(401).json({ error: "Unauthorized: Invalid Token" });
+        return res.status(401).json({ error: "Unauthorized: Invalid Tokenn" });
       }
     };

@@ -1,10 +1,10 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const db = require('../../../config/db')
-const fs = require("fs")
-const path = require("path")
-const yup = require("yup")
-require("dotenv").config()
+const db = require("../../../config/db");
+const fs = require("fs");
+const path = require("path");
+const yup = require("yup");
+require("dotenv").config();
 
 const userSchema = yup.object().shape({
   name: yup.string().required(),
@@ -18,8 +18,8 @@ const userSchema = yup.object().shape({
 
 exports.getAllUsers = async (req, res) => {
   try {
-    const page = parseInt(req.query.page) || 1; 
-    const perPage = parseInt(req.query.perPage) || 5; 
+    const page = parseInt(req.query.page) || 1;
+    const perPage = parseInt(req.query.perPage) || 5;
     const offset = (page - 1) * perPage;
     const query = `SELECT * FROM users LIMIT $1 OFFSET $2`;
     const { rows } = await db.query(query, [perPage, offset]);
@@ -29,15 +29,14 @@ exports.getAllUsers = async (req, res) => {
     res.json(rows);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Server error", error});
+    res.status(500).json({ message: "Server error", error });
   }
 };
-
 
 exports.getUser = async (req, res) => {
   const userId = req.params.id;
   try {
-    const query = "SELECT * FROM users WHERE id = $1"; 
+    const query = "SELECT * FROM users WHERE id = $1";
     const { rows } = await db.query(query, [userId]);
     if (rows.length === 0) {
       return res.status(404).json({ error: "User not found" });
@@ -45,18 +44,21 @@ exports.getUser = async (req, res) => {
     res.json(rows[0]);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: "Server error" , error});
+    res.status(500).json({ message: "Server error", error });
   }
 };
 
 exports.addUser = async (req, res) => {
   try {
-    await userSchema.validate(req.body)
-    const { name, username, password, address, phone, email, image_name } = req.body;
-    const usernameExistQuery = "SELECT * FROM users WHERE username = $1"; 
-    const emailExistQuery = "SELECT * FROM users WHERE email = $1"; 
-    const { rows: existingUsername } = await db.query(usernameExistQuery, [username]);
-    const { rows: existingEmail} = await db.query(emailExistQuery, [email]);
+    await userSchema.validate(req.body);
+    const { name, username, password, address, phone, email, image_name } =
+      req.body;
+    const usernameExistQuery = "SELECT * FROM users WHERE username = $1";
+    const emailExistQuery = "SELECT * FROM users WHERE email = $1";
+    const { rows: existingUsername } = await db.query(usernameExistQuery, [
+      username,
+    ]);
+    const { rows: existingEmail } = await db.query(emailExistQuery, [email]);
 
     if (existingUsername.length > 0) {
       return res.json("Username already exists");
@@ -66,16 +68,22 @@ exports.addUser = async (req, res) => {
     }
     const hashedPassword = await bcrypt.hash(password, 10);
     const insertUserQuery =
-      "INSERT INTO users (name, username, password, address, phone, email, image_name) VALUES ($1, $2, $3, $4, $5, $6, $7)"; 
-    const added = await db.query(insertUserQuery, [name, username, hashedPassword, address, phone, email, req.file.filename]);
+      "INSERT INTO users (name, username, password, address, phone, email, image_name) VALUES ($1, $2, $3, $4, $5, $6, $7)";
+    const added = await db.query(insertUserQuery, [
+      name,
+      username,
+      hashedPassword,
+      address,
+      phone,
+      email,
+      req.file.filename,
+    ]);
 
-    res.status(201).json({success: "User created successfully"});
+    res.status(200).json({ success: "User created successfully" });
   } catch (error) {
-    console.error(error);
     res.status(500).json({ message: "Server error", error });
-  } 
+  }
 };
-
 
 exports.editUser = async (req, res) => {
   try {
@@ -83,15 +91,14 @@ exports.editUser = async (req, res) => {
     const updates = req.body;
     const hashedPassword = await bcrypt.hash(updates.password, 10);
 
-    const updateQuery = "UPDATE users SET name = $1, username = $2, password = $3, address = $4, phone = $5, email = $6 WHERE id = $7"; // Replace 'users' with your PostgreSQL table name
-    const { rows } = await db.query(updateQuery, [
+    const updateQuery =
+      "UPDATE users SET name = $1, password = $2, address = $3, phone = $4 WHERE id = $5"; 
+      await db.query(updateQuery, [
       updates.name,
-      updates.username,
       hashedPassword,
       updates.address,
       updates.phone,
-      updates.email,
-      userId
+      userId,
     ]);
 
     res.status(200).json({ success: "User updated successfully" });
@@ -104,7 +111,7 @@ exports.editUser = async (req, res) => {
 exports.deleteUser = async (req, res) => {
   try {
     const userId = req.params.id;
-    const deleteQuery = "DELETE FROM users WHERE id = $1"; 
+    const deleteQuery = "DELETE FROM users WHERE id = $1";
     const { rowCount } = await db.query(deleteQuery, [userId]);
 
     if (rowCount === 0) {
@@ -121,7 +128,7 @@ exports.deleteUser = async (req, res) => {
 exports.userLogin = async (req, res) => {
   try {
     const { username, password } = req.body;
-    const userQuery = "SELECT * FROM users WHERE username = $1"; 
+    const userQuery = "SELECT * FROM users WHERE username = $1";
     const { rows: userRows } = await db.query(userQuery, [username]);
 
     if (userRows.length === 0) {
@@ -141,10 +148,11 @@ exports.userLogin = async (req, res) => {
       },
     };
 
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign(payload, process.env.JWT_SECRET, {
+      expiresIn: "1h",
+    });
     res.send({ message: "User logged in successfully!!!", token: token });
   } catch (error) {
-    console.error(error);
     return res.status(400).send("Invalid details");
   }
 };
