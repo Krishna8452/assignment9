@@ -18,9 +18,13 @@ db.connect()
 })
 
 const userRouter = require("./routes/userRouter");
+const WinstonLoggerMiddleware = require("./middleware/winstonLoggerMiddleware")
+const errorHandlerMiddleware = require("./middleware/statusResponseMiddleware")
+
+app.use(WinstonLoggerMiddleware)
 
 app.use("/api", userRouter);
-  
+
 const options = {
   definition: {
     openapi: '3.0.0',
@@ -44,3 +48,4 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+app.use(errorHandlerMiddleware)
