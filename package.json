@@ -18,8 +18,7 @@
   },
   "scripts": {
     "start": "nodemon app.js",
-    "test":"jest"
-
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^29.7.0",

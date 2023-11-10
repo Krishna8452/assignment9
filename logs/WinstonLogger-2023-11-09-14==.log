@@ -18,3 +18,10 @@
 {"level":"info","message":"Request Initiated | DELETE | /api/users/fc64d27b-531b-400e-8c42-70a0ea371da6| Req.body: {} |Params: {}| Date: 11/9/2023, 2:16:13 PM}","timestamp":"2023-11-09T08:31:13.608Z"}
 {"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=20| Req.body: {} |Params: {}| Date: 11/9/2023, 2:42:10 PM}","timestamp":"2023-11-09T08:57:10.961Z"}
 {"level":"info","message":"Request Initiated | GET | /api/users/4e5046a7-f845-4896-9eae-484358c2c35a| Req.body: {} |Params: {}| Date: 11/9/2023, 2:43:33 PM}","timestamp":"2023-11-09T08:58:33.404Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users/login| Req.body: {\"username\":\"birav10\",\"password\":\"birav84\"} |Params: {}| Date: 11/9/2023, 2:47:23 PM}","timestamp":"2023-11-09T09:02:23.655Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.414Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.443Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.454Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.459Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.462Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/9/2023, 2:49:49 PM}","timestamp":"2023-11-09T09:04:49.756Z"}

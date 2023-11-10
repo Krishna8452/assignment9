@@ -6,15 +6,7 @@ const path = require("path");
 const yup = require("yup");
 require("dotenv").config();
 
-const userSchema = yup.object().shape({
-  name: yup.string().required(),
-  username: yup.string().required(),
-  password: yup.string().required(),
-  address: yup.string(),
-  phone: yup.string(),
-  email: yup.string().email().required(),
-  filename: yup.string(),
-});
+
 
 exports.getAllUsers = async (req, res) => {
   try {
@@ -50,7 +42,6 @@ exports.getUser = async (req, res) => {
 
 exports.addUser = async (req, res) => {
   try {
-    await userSchema.validate(req.body);
     const { name, username, password, address, phone, email, image_name } =
       req.body;
     const usernameExistQuery = "SELECT * FROM users WHERE username = $1";
@@ -68,7 +59,7 @@ exports.addUser = async (req, res) => {
     }
     const hashedPassword = await bcrypt.hash(password, 10);
     const insertUserQuery =
-      "INSERT INTO users (name, username, password, address, phone, email, image_name) VALUES ($1, $2, $3, $4, $5, $6, $7)";
+      "INSERT INTO users (name, username, password, address, phone, email) VALUES ($1, $2, $3, $4, $5, $6)";
     const added = await db.query(insertUserQuery, [
       name,
       username,
@@ -76,12 +67,11 @@ exports.addUser = async (req, res) => {
       address,
       phone,
       email,
-      req.file.filename,
     ]);
 
     res.status(200).json({ success: "User created successfully" });
   } catch (error) {
-    res.status(500).json({ message: "Server error", error });
+    res.status(500).json(error.message );
   }
 };
 

@@ -90,41 +90,6 @@
    *                 $ref: '#/components/schemas/User'
    *       '500':
    *         description: Internal server error
-   *   post:
-   *     summary: Add a new user
-   *     tags:
-   *       - User
-   *     requestBody:
-   *       required: true
-   *       content:
-   *         multipart/form-data:
-   *           schema:
-   *             type: object
-   *             properties:
-   *               name:
-   *                 type: string
-   *               username:
-   *                 type: string
-   *               password:
-   *                 type: string
-   *               email:
-   *                 type: string
-   *               address:
-   *                 type: string
-   *               phone:
-   *                 type: number
-   *               image:
-   *                 type: string
-   *                 format: binary
-   *     responses:
-   *       '200':
-   *         description: User added successfully
-   *         content:
-   *           application/json:
-   *             schema:
-   *               $ref: '#/components/schemas/User'
-   *       '500':
-   *         description: Internal server error
    */
 
   /**
@@ -212,36 +177,73 @@
    *         description: Internal server error
    */
 
+/**
+ * @swagger
+ * /api/users/{id}:
+ *   delete:
+ *     summary: Delete a user by ID
+ *     tags:
+ *       - User
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *           format: uuid
+ *       - in: header
+ *         name: Authorization
+ *         required: true
+ *         description: Bearer token in the format "Bearer {token}"
+ *         schema:
+ *           type: string
+ *     responses:
+ *       '200':
+ *         description: User deleted successfully
+ *       '401':
+ *         description: Unauthorized - Missing or invalid token
+ *         content:
+ *           application/json:
+ *             example:
+ *               error: "Unauthorized"
+ *               message: "Token is missing or invalid"
+ *       '500':
+ *         description: Internal server error
+ *         content:
+ *           application/json:
+ *             example:
+ *               error: "Internal Server Error"
+ *               message: "An error occurred while processing the request"
+ */
+
+
   /**
-   * @swagger
-   * /api/users/{id}:
-   *   delete:
-   *     summary: Delete a user by ID
+   * @swagger 
+   * /api/users:
+   *   post:
+   *     summary: Add a new user
    *     tags:
    *       - User
-   *     parameters:
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         schema:
-   *           type: string
-   *           format: uuid
-   *       - in: header
-   *         name: Authorization
-   *         required: true
-   *         schema:
-   *           type: string
-   *           description: Bearer token in the format "Bearer {token}"
+   *     requestBody:
+   *       required: true
+   *       content:
+   *         application/json:
+   *           schema:
+   *             $ref: '#/components/schemas/User'
    *     responses:
    *       '200':
-   *         description: User deleted successfully
+   *         description: User added successfully
+   *         content:
+   *           application/json:
+   *             schema:
+   *               $ref: '#/components/schemas/User'
    *       '500':
    *         description: Internal server error
    */
 
   router.route("/users/login").post(userLogin);
   router.route("/users").get(yupValidatorMiddleware(getUserSchema), getAllUsers);
-  router.route("/users").post(uploadImage, yupValidatorMiddleware(createUserSchema), addUser);
+  router.route("/users").post(yupValidatorMiddleware(createUserSchema), addUser);
   router.route("/users/:id").get(yupValidatorMiddleware(isValidIdSchema), getUser);
   router.route("/users/:id").put(yupValidatorMiddleware(updataUserSchema), editUser);
 

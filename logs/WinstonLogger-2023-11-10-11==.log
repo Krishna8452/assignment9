@@ -1,0 +1,58 @@
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:07:54 AM}","timestamp":"2023-11-10T05:22:54.201Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:01 AM}","timestamp":"2023-11-10T05:23:01.782Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:02 AM}","timestamp":"2023-11-10T05:23:02.675Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:02 AM}","timestamp":"2023-11-10T05:23:02.808Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:02 AM}","timestamp":"2023-11-10T05:23:02.909Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.015Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.122Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.214Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.313Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.406Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.502Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:08:03 AM}","timestamp":"2023-11-10T05:23:03.815Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users?page=1&perPage=2| Req.body: {} |Params: {}| Date: 11/10/2023, 11:14:01 AM}","timestamp":"2023-11-10T05:29:01.110Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.375Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.422Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.429Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.435Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.440Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:16:53 AM}","timestamp":"2023-11-10T05:31:53.854Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {} |Params: {}| Date: 11/10/2023, 11:17:36 AM}","timestamp":"2023-11-10T05:32:36.778Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.404Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.437Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.442Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.451Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.454Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:19:23 AM}","timestamp":"2023-11-10T05:34:23.799Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:52 AM}","timestamp":"2023-11-10T05:35:53.020Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:53 AM}","timestamp":"2023-11-10T05:35:53.054Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:53 AM}","timestamp":"2023-11-10T05:35:53.058Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:53 AM}","timestamp":"2023-11-10T05:35:53.067Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:53 AM}","timestamp":"2023-11-10T05:35:53.070Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:20:53 AM}","timestamp":"2023-11-10T05:35:53.253Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.412Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.444Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.451Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.456Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.461Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:22:14 AM}","timestamp":"2023-11-10T05:37:14.681Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.267Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.304Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.310Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.319Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.322Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:27:42 AM}","timestamp":"2023-11-10T05:42:42.522Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:57 AM}","timestamp":"2023-11-10T05:43:57.950Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:57 AM}","timestamp":"2023-11-10T05:43:57.978Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:57 AM}","timestamp":"2023-11-10T05:43:57.986Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:57 AM}","timestamp":"2023-11-10T05:43:57.990Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:57 AM}","timestamp":"2023-11-10T05:43:57.996Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/10/2023, 11:28:58 AM}","timestamp":"2023-11-10T05:43:58.217Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {\"name\":\"John Doe\",\"username\":\"johndoe\",\"password\":\"secret123\",\"email\":\"john@example.com\",\"address\":\"123 Main St, City\",\"phone\":9800761234} |Params: {}| Date: 11/10/2023, 11:29:05 AM}","timestamp":"2023-11-10T05:44:05.811Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {\"name\":\"John Doe\",\"username\":\"johndoe\",\"password\":\"secret123\",\"email\":\"john@example.com\",\"address\":\"123 Main St, City\",\"phone\":9800761234} |Params: {}| Date: 11/10/2023, 11:29:44 AM}","timestamp":"2023-11-10T05:44:44.625Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {\"name\":\"John Doe\",\"username\":\"johndoe\",\"password\":\"secret123\",\"email\":\"john@example.com\",\"address\":\"123 Main St, City\",\"phone\":9800761234} |Params: {}| Date: 11/10/2023, 11:30:48 AM}","timestamp":"2023-11-10T05:45:48.827Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {\"name\":\"John Doe\",\"username\":\"johndoe\",\"password\":\"secret123\",\"email\":\"john@example.com\",\"address\":\"123 Main St, City\",\"phone\":9800761234} |Params: {}| Date: 11/10/2023, 11:31:23 AM}","timestamp":"2023-11-10T05:46:23.962Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users| Req.body: {\"name\":\"John Doe\",\"username\":\"johndoe\",\"password\":\"secret123\",\"email\":\"john@example.com\",\"address\":\"123 Main St, City\",\"phone\":9800761234} |Params: {}| Date: 11/10/2023, 11:31:49 AM}","timestamp":"2023-11-10T05:46:49.985Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users/login| Req.body: {\"username\":\"string\",\"password\":\"string\"} |Params: {}| Date: 11/10/2023, 11:33:48 AM}","timestamp":"2023-11-10T05:48:48.577Z"}
+{"level":"info","message":"Request Initiated | POST | /api/users/login| Req.body: {\"username\":\"birav10\",\"password\":\"birav84\"} |Params: {}| Date: 11/10/2023, 11:34:02 AM}","timestamp":"2023-11-10T05:49:02.768Z"}
+{"level":"info","message":"Request Initiated | GET | /api/users/| Req.body: {} |Params: {}| Date: 11/10/2023, 11:44:23 AM}","timestamp":"2023-11-10T05:59:23.336Z"}

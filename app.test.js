@@ -7,7 +7,7 @@ app.use(express.json());
 app.use('/api', router);
 
 describe('User API Routes', () => {
-  it('should log in a user', async () => {
+  it('should login a user', async () => {
     const credentials = {
       username: 'birav10',
       password: 'birav84',
@@ -30,7 +30,6 @@ describe('User API Routes', () => {
       email: 'john@example.com',
       address: '123 Main St, City',
       phone: '9800761234',
-      image: 'path-to-your-test-image.jpg',
     };
 
     const response = await request(app).post('/api/users').send(newUser);
@@ -38,14 +37,14 @@ describe('User API Routes', () => {
   });
 
   it('should get a user by ID', async () => {
-    const userId = 'e14347d2-7eba-4869-8696-55170693c6d1'; 
+    const userId = '2617affe-1d6c-46bb-9b68-795fceab8b80'; 
 
     const response = await request(app).get(`/api/users/${userId}`);
     expect(response.status).toBe(200);
   });
 
   it('should update a user by ID', async () => {
-    const userId = 'e14347d2-7eba-4869-8696-55170693c6d1'; 
+    const userId = '2617affe-1d6c-46bb-9b68-795fceab8b80'; 
     const updatedUser = {
       name: 'John Doe',
       username: 'johndoe',
@@ -60,8 +59,8 @@ describe('User API Routes', () => {
   });
 
   it('should delete a user by ID', async () => {
-    const userId = 'e14347d2-7eba-4869-8696-55170693c6d1';
-    const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYmlyYXYxMCIsInBhc3N3b3JkIjoiJDJiJDEwJHI5SlR3RVhwSTQ1cWltR3dXVXNyQmUuVUNFV3p4c0FCY1hLdndzOE94S2F6bXdKMnE2aHIuIn0sImlhdCI6MTY5OTUxNzY3NiwiZXhwIjoxNjk5NTIxMjc2fQ.M1NoydAALR7bOUCXqlAJiF07haOjhJQPBbH-APZ5KlY"
+    const userId = '2617affe-1d6c-46bb-9b68-795fceab8b80';
+    const validToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYmlyYXYxMCIsInBhc3N3b3JkIjoiJDJiJDEwJHI5SlR3RVhwSTQ1cWltR3dXVXNyQmUuVUNFV3p4c0FCY1hLdndzOE94S2F6bXdKMnE2aHIuIn0sImlhdCI6MTY5OTU5NTM0MiwiZXhwIjoxNjk5NTk4OTQyfQ.uoiNGTSzKw-e2b_KDEpDWsT5rFEtyOYk2neOYovEo3Y"
     const response = await request(app)
       .delete(`/api/users/${userId}`)
       .set('Authorization', `Bearer ${validToken}`);
