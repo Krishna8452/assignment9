@@ -30,13 +30,13 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'This is Node express api for Ecommerce',
+      title: 'This is Node express api for User',
       version: '1.0.0',
-      description:'this is a api for ecommerce web application'
+      description:'this is a api for user web application'
     },
     servers: [
       {
-        url: `http://localhost:${port}`
+        url: `https://krishna8452-assignment9.onrender.com`
       }
     ]
   },
