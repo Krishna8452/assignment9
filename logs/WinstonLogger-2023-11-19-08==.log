@@ -1,0 +1,12 @@
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.090Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.124Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.138Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.141Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.152Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/19/2023, 8:04:08 AM}","timestamp":"2023-11-19T02:19:08.712Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.720Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui.css| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.747Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-bundle.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.753Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-standalone-preset.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.759Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/swagger-ui-init.js| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.771Z"}
+{"level":"info","message":"Request Initiated | GET | /api-docs/favicon-32x32.png| Req.body: {} |Params: {}| Date: 11/19/2023, 8:05:51 AM}","timestamp":"2023-11-19T02:20:51.991Z"}

@@ -42,7 +42,7 @@ exports.getUser = async (req, res) => {
 
 exports.addUser = async (req, res) => {
   try {
-    const { name, username, password, address, phone, email, image_name } =
+    const { name, username, password, address, phone, email } =
       req.body;
     const usernameExistQuery = "SELECT * FROM users WHERE username = $1";
     const emailExistQuery = "SELECT * FROM users WHERE email = $1";

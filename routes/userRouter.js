@@ -191,12 +191,8 @@
  *         schema:
  *           type: string
  *           format: uuid
- *       - in: header
- *         name: Authorization
- *         required: true
- *         description: Bearer token in the format "Bearer {token}"
- *         schema:
- *           type: string
+ *     security:
+ *       - BearerAuth: []  # Reference to the security scheme
  *     responses:
  *       '200':
  *         description: User deleted successfully
@@ -214,6 +210,13 @@
  *             example:
  *               error: "Internal Server Error"
  *               message: "An error occurred while processing the request"
+ *
+ * securitySchemes:
+ *   BearerAuth:  # Security scheme definition
+ *     type: apiKey
+ *     in: header
+ *     name: Authorization
+ *     description: Bearer token in the format "Bearer {token}"
  */
 
 

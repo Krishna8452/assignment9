@@ -69,6 +69,16 @@
             "date": 1700286171441,
             "name": "logs\\WinstonLogger-2023-11-18-11==.log",
             "hash": "f88bcb9e848cf6bd38d196acf50df9fd480316558e0f4855fce58058b1bdc39b"
+        },
+        {
+            "date": 1700358662109,
+            "name": "logs\\WinstonLogger-2023-11-19-07==.log",
+            "hash": "a5d52fe1cd9b3e8b708ca705b28b69275abc4eb5ecfc980eb40beb451661ed3b"
+        },
+        {
+            "date": 1700360340031,
+            "name": "logs\\WinstonLogger-2023-11-19-08==.log",
+            "hash": "a1e6c1e16a68f8c86bce81cf595124a36f1fbe4ea14dca276779a6890ad26040"
         }
     ],
     "hashType": "sha256"
