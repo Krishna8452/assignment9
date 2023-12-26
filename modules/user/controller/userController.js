@@ -147,5 +147,5 @@ exports.userLogin = async (req, res) => {
   }
 };
 exports.testing = async (req, res) => {
-  res.status(200).send('issue added successfully')
+  return res.status(200).send('issue added successfully')
 }

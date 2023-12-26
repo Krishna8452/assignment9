@@ -178,6 +178,49 @@
    *         description: Internal server error
    */
 
+/**
+ * @swagger
+ * /api/users/{id}:
+ *   delete:
+ *     summary: Delete a user by ID
+ *     tags:
+ *       - User
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         schema:
+ *           type: string
+ *           format: uuid
+ *     security:
+ *       - BearerAuth: []  # Reference to the security scheme
+ *     responses:
+ *       '200':
+ *         description: User deleted successfully
+ *       '401':
+ *         description: Unauthorized - Missing or invalid token
+ *         content:
+ *           application/json:
+ *             example:
+ *               error: "Unauthorized"
+ *               message: "Token is missing or invalid"
+ *       '500':
+ *         description: Internal server error
+ *         content:
+ *           application/json:
+ *             example:
+ *               error: "Internal Server Error"
+ *               message: "An error occurred while processing the request"
+ *
+ * securitySchemes:
+ *   BearerAuth:  # Security scheme definition
+ *     type: apiKey
+ *     in: header
+ *     name: Authorization
+ *     description: Bearer token in the format "Bearer {token}"
+ */
+
+
   /**
    * @swagger 
    * /api/users:
@@ -200,51 +243,6 @@
    *               $ref: '#/components/schemas/User'
    *       '500':
    *         description: Internal server error
-   */
-
-  /**
-   * @swagger
-   * security:
-   *   - BearerAuth: []  # Reference to the security scheme
-   *
-   * /api/users/{id}:
-   *   delete:
-   *     summary: Delete a user by ID
-   *     tags:
-   *       - User
-   *     parameters:
-   *       - in: path
-   *         name: id
-   *         required: true
-   *         schema:
-   *           type: string
-   *           format: uuid
-   *     security:
-   *       - BearerAuth: []  # Reference to the security scheme
-   *     responses:
-   *       '200':
-   *         description: User deleted successfully
-   *       '401':
-   *         description: Unauthorized - Missing or invalid token
-   *         content:
-   *           application/json:
-   *             example:
-   *               error: "Unauthorized"
-   *               message: "Token is missing or invalid"
-   *       '500':
-   *         description: Internal server error
-   *         content:
-   *           application/json:
-   *             example:
-   *               error: "Internal Server Error"
-   *               message: "An error occurred while processing the request"
-   *
-   * components:
-   *   securitySchemes:
-   *     BearerAuth:  # Security scheme definition
-   *       type: http
-   *       scheme: bearer
-   *       bearerFormat: JWT
    */
 
   router.route("/test").post(testing);
