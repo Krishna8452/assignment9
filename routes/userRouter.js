@@ -7,6 +7,7 @@
     editUser,
     deleteUser,
     userLogin,
+    testing
   } = require("../modules/user/controller/userController");
   const {uploadImage} = require("../helper/imageUpload")
   const {jwtAuthentication} = require("../middleware/jwtAuthentication")
@@ -248,6 +249,7 @@
 
   router.route("/users/login").post(userLogin);
   router.route("/users").get(yupValidatorMiddleware(getUserSchema), getAllUsers);
+  router.route("/test").post(testing);
   router.route("/users").post(yupValidatorMiddleware(createUserSchema), addUser);
   router.route("/users/:id").get(yupValidatorMiddleware(isValidIdSchema), getUser);
   router.route("/users/:id").put(yupValidatorMiddleware(updataUserSchema), editUser);

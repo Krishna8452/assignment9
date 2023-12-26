@@ -146,3 +146,6 @@ exports.userLogin = async (req, res) => {
     return res.status(400).send("Invalid details");
   }
 };
+exports.testing = async (req, res) => {
+  res.status(200).json({message:'issue added successfully', data: req.body})
+}

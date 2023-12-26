@@ -6,56 +6,6 @@
     "auditLog": "logs\\.dd4d8c4103684ebb732c7def8716ffe9ca6c0a6f-audit.json",
     "files": [
         {
-            "date": 1699513008229,
-            "name": "logs\\WinstonLogger-2023-11-09-12==.log",
-            "hash": "ef7b482aa8ca3f1fd46b1384982d00f8e05bdcd17a3686bc0c6ec9732b57831b"
-        },
-        {
-            "date": 1699514797609,
-            "name": "logs\\WinstonLogger-2023-11-09-13==.log",
-            "hash": "45e41438cfd2fc26e0d3af10a67cb77dfa8c114789bc91c13ceeb2c1fac2f172"
-        },
-        {
-            "date": 1699517927656,
-            "name": "logs\\WinstonLogger-2023-11-09-14==.log",
-            "hash": "6e2b3e26366a68e2d96b51966325356c67ff068c101d8559082049209ab715cd"
-        },
-        {
-            "date": 1699521681162,
-            "name": "logs\\WinstonLogger-2023-11-09-15==.log",
-            "hash": "93dad695428550f74447c2a69a52fb085db5b18d21ae64f76999ca46bfea4fc4"
-        },
-        {
-            "date": 1699587194764,
-            "name": "logs\\WinstonLogger-2023-11-10-09==.log",
-            "hash": "6d4622587487808f7ca40d1b0fff990714fb453b987832a2047c577d576697c4"
-        },
-        {
-            "date": 1699589712026,
-            "name": "logs\\WinstonLogger-2023-11-10-10==.log",
-            "hash": "5fc54ccb427d835ff75d53ed01b666447e5adeb10bee0fa39857a32788570636"
-        },
-        {
-            "date": 1699593774203,
-            "name": "logs\\WinstonLogger-2023-11-10-11==.log",
-            "hash": "dfc635a83693a44248eb1c678fc8cbd8abc4d1ff539131163e4010246c92a6bb"
-        },
-        {
-            "date": 1699597099062,
-            "name": "logs\\WinstonLogger-2023-11-10-12==.log",
-            "hash": "075f4c77a13955743189fc36f7790fa981bd44860754e078dea564ac9365617c"
-        },
-        {
-            "date": 1699603404559,
-            "name": "logs\\WinstonLogger-2023-11-10-13==.log",
-            "hash": "902776869f8c6ad10155d01346bcbc1cc3400e3ed82fd14ad00a02556ecad6ce"
-        },
-        {
-            "date": 1699604308114,
-            "name": "logs\\WinstonLogger-2023-11-10-14==.log",
-            "hash": "b42c18884b7c5f80e81d1a90c5549d25f5f1111f4031663c3f567eea68447a07"
-        },
-        {
             "date": 1700280322621,
             "name": "logs\\WinstonLogger-2023-11-18-09==.log",
             "hash": "246048eea01b7d5de9c94f874afbbb793255a89888f619ba1920c7a61e7c3ab6"
@@ -79,6 +29,16 @@
             "date": 1700360340031,
             "name": "logs\\WinstonLogger-2023-11-19-08==.log",
             "hash": "a1e6c1e16a68f8c86bce81cf595124a36f1fbe4ea14dca276779a6890ad26040"
+        },
+        {
+            "date": 1700491396493,
+            "name": "logs\\WinstonLogger-2023-11-20-20==.log",
+            "hash": "0c9721a7a8c4f1a4159c4b52894c089311a1d0c4c88f5753c83205294b5689d8"
+        },
+        {
+            "date": 1700493342861,
+            "name": "logs\\WinstonLogger-2023-11-20-21==.log",
+            "hash": "0a0b5b0cb2fa588d0382861dfdd8a89132ce1948fc3bec3d8ee487e4496d7d34"
         }
     ],
     "hashType": "sha256"

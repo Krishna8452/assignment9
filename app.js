@@ -1,4 +1,5 @@
-const port = 5000;
+require('dotenv').config()
+const port = parseInt(process.env.PORT);
 const express = require("express");
 const bodyParser = require("body-parser")
 const swaggerJSDoc = require("swagger-jsdoc");
@@ -36,11 +37,11 @@ const options = {
     },
     servers: [
       {
-        url: `https://krishna8452-assignment9.onrender.com`
+        url: `http://localhost:${port}`
       }
     ]
   },
-  apis: ["./routes/*.js"],
+  apis  : ["./routes/*.js"],
 };
 
 const specs = swaggerJSDoc(options);
